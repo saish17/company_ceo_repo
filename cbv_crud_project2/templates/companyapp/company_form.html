@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends 'companyapp/base.html' %}
+ {% block body_block %}
+  <h1>Insert/Update Form</h1><hr>
+  <form  method="post">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input class="btn btn-outline-warning" type="submit" name="" value="Insert/Update Record">&nbsp
+    <a href="/"  class="btn btn-outline-info">Home</a>
+  </form>
+ {% endblock %}
